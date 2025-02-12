@@ -22,6 +22,8 @@ const MainSection = () => {
           gap: "10px",
           backgroundColor: "#fff",
           margin: "20px 0px",
+          boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)",
+
         }}
       >
         {/* Left Section (Avatar & Profile Info) */}

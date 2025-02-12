@@ -19,13 +19,10 @@ import { useRouter } from "next/navigation";
 
 const HeaderSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const router = useRouter();
 
   return (
     <>
       <Sidebar open={menuOpen} toggleSidebar={() => setMenuOpen(!menuOpen)} />
-
-      {/* Top Header */}
       <Box
         sx={{
           borderBottom: "1px solid #ddd",
@@ -112,28 +109,15 @@ const HeaderSection = () => {
             display: "flex",
             gap: "16px",
             padding: "10px 20px",
-            flexWrap: "wrap",
             overflowX: { xs: "auto", md: "unset" }, // Horizontal scroll on small screens
             whiteSpace: "nowrap",
           }}
         >
-          <ListItem
-            icon={<BookIcon fontSize="small" />}
-            label="Overview"
-            active
-            onClick={() => router.push("Overview")} // Navigate to Overview
-
-          />
-          
-          <ListItem
-            icon={<GridOnIcon fontSize="small" />}
-            label="Repositories"
-            count={2}
-            onClick={() => router.push("Repositories")}
-          />
-          <ListItem icon={<PackageIcon fontSize="small" />} label="Projects" />
-          <ListItem icon={<PackageIcon fontSize="small" />} label="Packages" />
-          <ListItem icon={<StarBorderIcon fontSize="small" />} label="Stars" />
+          <ListItem icon={<BookIcon fontSize="small" />} label="Overview" href="/Overview" />
+          <ListItem icon={<GridOnIcon fontSize="small" />} label="Repositories" count={2} href="/Repositories" />
+          <ListItem icon={<PackageIcon fontSize="small" />} label="Projects" href="/projects" />
+          <ListItem icon={<PackageIcon fontSize="small" />} label="Packages" href="/packages" />
+          <ListItem icon={<StarBorderIcon fontSize="small" />} label="Stars" href="/stars" />
         </Box>
       </Box>
     </>
