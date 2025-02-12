@@ -57,7 +57,6 @@ const MainSection = () => {
               <Image src="/avator.png" alt="avatar" width={150} height={100} />
             </Box>
 
-            {/* Status Button */}
 
             <Box
               sx={{
