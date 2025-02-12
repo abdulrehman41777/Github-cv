@@ -15,7 +15,6 @@ import Image from "next/image";
 import ListItem from "../list-items";
 import { useState } from "react";
 import Sidebar from "../sidebar";
-import { useRouter } from "next/navigation";
 
 const HeaderSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);

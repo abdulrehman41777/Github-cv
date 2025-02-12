@@ -43,7 +43,7 @@ const CvDetails = () => {
       </Typography>
 
       {/* Professional Summary */}
-      <Typography variant="h6" fontWeight="bold" color="secondary">
+      <Typography variant="h6" fontWeight="bold" color="primary">
         Professional Summary
       </Typography>
       <Typography sx={{ fontSize: "14px", mb: 3, color: "#555" }}>
@@ -53,7 +53,7 @@ const CvDetails = () => {
       </Typography>
 
       {/* Skills */}
-      <Typography variant="h6" fontWeight="bold" color="secondary">
+      <Typography variant="h6" fontWeight="bold" color="primary">
         Skills
       </Typography>
       <Typography sx={{ fontSize: "14px", mb: 3, color: "#555" }}>
@@ -63,7 +63,7 @@ const CvDetails = () => {
       </Typography>
 
       {/* Experience */}
-      <Typography variant="h6" fontWeight="bold" color="secondary">
+      <Typography variant="h6" fontWeight="bold" color="primary">
         Experience
       </Typography>
       <Typography sx={{ fontSize: "14px", mb: 3, color: "#555" }}>
@@ -72,7 +72,7 @@ const CvDetails = () => {
       </Typography>
 
       {/* Education */}
-      <Typography variant="h6" fontWeight="bold" color="secondary">
+      <Typography variant="h6" fontWeight="bold" color="primary">
         Education
       </Typography>
       <Typography sx={{ fontSize: "14px", mb: 2, color: "#555" }}>

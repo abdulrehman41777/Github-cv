@@ -9,7 +9,6 @@ import {
 } from "@mui/material";
 import GitHubContributionGraph from "../contribuition-graphs";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import { Email, LocationOn, Phone } from "@mui/icons-material";
 import CvDetails from "../cv-details";
 
 const GitHubActivity = () => {
@@ -60,7 +59,7 @@ const GitHubActivity = () => {
                 textAlign: { xs: "center", sm: "left" },
               }}
             >
-              <Typography sx={{ fontSize: { xs: "14px", sm: "16px" } }}>
+              <Typography sx={{ fontSize: { xs: "14px", sm: "16px"} , color:"#1976D2",  fontWeight:"600"}}>
                 4 contributions in {selectedYear}
               </Typography>
               <Box
@@ -187,6 +186,7 @@ const GitHubActivity = () => {
         <Box>
           <Typography
             variant="h6"
+            color="primary"
             sx={{ fontWeight: "bold", marginBottom: "10px" }}
           >
             Contribution activity
