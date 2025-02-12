@@ -2,13 +2,13 @@ import HeaderSection from '@/components/header-sec'
 import MainSection from '@/components/main-section'
 import React from 'react'
 
-const HomePages = () => {
+const Overview = () => {
   return (
     <>
-        <HeaderSection/>
-        <MainSection/>
+    <HeaderSection/>
+    <MainSection/>
     </>
   )
 }
 
-export default HomePages
+export default Overview

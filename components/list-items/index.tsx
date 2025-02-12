@@ -8,9 +8,11 @@ interface ListItemProps {
   label: string;
   count?: number;
   active?: boolean;
+  onClick?: () => void; // 👈 Add this
+
 }
 
-const ListItem: React.FC<ListItemProps> = ({ icon, label, count, active }) => {
+const ListItem: React.FC<ListItemProps> = ({ icon, label, count, active,onClick  }) => {
   return (
     <Box
       sx={{
@@ -26,6 +28,7 @@ const ListItem: React.FC<ListItemProps> = ({ icon, label, count, active }) => {
         "&:hover": { color: "#000" },
         minWidth: "100px", // Ensures spacing in small screens
       }}
+      onClick={onClick}
     >
       {icon}
       <Typography variant="body2">{label}</Typography>

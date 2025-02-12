@@ -1,10 +1,13 @@
-import HomePages from '@/home-pages'
 import React from 'react'
+import Overview from './Overview/page'
+import Repositories from './Repositories/page'
 
 const page = () => {
   return (
     <>
-    <HomePages/>
+    <Overview/>
+    <Repositories/>
+    
     </>
   )
 }

@@ -15,9 +15,11 @@ import Image from "next/image";
 import ListItem from "../list-items";
 import { useState } from "react";
 import Sidebar from "../sidebar";
+import { useRouter } from "next/navigation";
 
 const HeaderSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <>
@@ -119,11 +121,15 @@ const HeaderSection = () => {
             icon={<BookIcon fontSize="small" />}
             label="Overview"
             active
+            onClick={() => router.push("Overview")} // Navigate to Overview
+
           />
+          
           <ListItem
             icon={<GridOnIcon fontSize="small" />}
             label="Repositories"
             count={2}
+            onClick={() => router.push("Repositories")}
           />
           <ListItem icon={<PackageIcon fontSize="small" />} label="Projects" />
           <ListItem icon={<PackageIcon fontSize="small" />} label="Packages" />
